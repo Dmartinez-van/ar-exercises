@@ -7,4 +7,6 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-# Your code goes here ...
+print "Total annual revenue for all stores: $", Store.sum("annual_revenue"), "\n"
+print "Average annual revenue for all stores: $", Store.average("annual_revenue"), "\n"
+print "Number of stores with annual revenue > $1M: ", Store.where('annual_revenue > 1000000').count, "\n"
